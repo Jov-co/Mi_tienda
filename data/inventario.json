@@ -10,7 +10,13 @@
             "lacteos": []
         },
         {
-            "licores": []
+            "licores": [
+                {
+                    "codigo": 101,
+                    "nombre": "Ron Viejo de Caldas",
+                    "cantidad": 30
+                }
+            ]
         }
     ]
 }

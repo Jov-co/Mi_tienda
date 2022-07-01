@@ -1,3 +1,5 @@
+from ast import arg
+from dbm import dumb
 import json
 RUTA_DATA = 'data/'
 
@@ -18,3 +20,14 @@ def Create_file(*args):
 def Read_file():
     with open (RUTA_DATA, 'r') as rf:
         return json.load(rf)
+
+def add_info(llave_pp, categoria, llave_cat, info):
+    """
+    Ingrese la información que desea guardar
+    """
+    with open(RUTA_DATA, 'r+') as rwf:
+        data_file = json.load(rwf)
+        data_file[llave_pp][categoria][llave_cat].append(info)
+        rwf.seek(0)
+        json.dump(data_file, rwf, indent= 4)
+        rwf.close()
