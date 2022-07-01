@@ -9,8 +9,8 @@ def check_file() -> bool:
     except:
         return False
 
-
-def Create_file(*args):
+# *arg integra los parametros enviados dentro de una tupla, para poder almacenar multiples datos
+def Create_file(*args): 
     with open(RUTA_DATA, 'w') as wf:
         json.dump(args[0], wf, indent=4)
         wf.close()
