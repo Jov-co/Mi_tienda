@@ -1,5 +1,3 @@
-from ast import arg
-from dbm import dumb
 import json
 RUTA_DATA = 'data/'
 
