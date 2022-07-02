@@ -3,9 +3,9 @@
         {
             "frutas": [
                 {
-                    "codigo": "3",
+                    "codigo": "1",
                     "nombre": "mango",
-                    "cantidad": 10
+                    "cantidad": 20
                 },
                 {
                     "codigo": "2",

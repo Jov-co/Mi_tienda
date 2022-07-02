@@ -29,13 +29,14 @@ def listar_categorias():
     return (cat, llave)
 
 if __name__ == '__main__':
+    
+    fm.RUTA_DATA += 'inventario.json'
+    if fm.check_file():
+        info = fm.Read_file()
+    else:
+        fm.Create_file(template_info)
     while True: 
         system('cls')
-        fm.RUTA_DATA += 'inventario.json'
-        if fm.check_file():
-            info = fm.Read_file()
-        else:
-            fm.Create_file(template_info)
         print("""
 1. Agregar un producto
 2. Buscar un producto
