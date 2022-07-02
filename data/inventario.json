@@ -1,7 +1,18 @@
 {
     "productos": [
         {
-            "frutas": []
+            "frutas": [
+                {
+                    "codigo": "3",
+                    "nombre": "mango",
+                    "cantidad": 10
+                },
+                {
+                    "codigo": "2",
+                    "nombre": "fresa",
+                    "cantidad": 6
+                }
+            ]
         },
         {
             "verduras": []
